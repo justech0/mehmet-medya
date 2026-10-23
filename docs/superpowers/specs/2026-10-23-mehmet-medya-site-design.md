@@ -44,7 +44,7 @@ Kural: Logo yeniden çizilmez, AI ile değiştirilmez. SVG çıktısı orijinal 
 1. **Fikir (hero):** 4'lü MM dağınık başlar. Üstteki iki M yukarıda süzülür, alttaki iki ters M aşağıda. Mouse ile 2–5° hafif eğim olur. Başlık: "Fikirden son kareye."
 2. **Kadraj:** Scroll ile ortada mavi ışık hattı çizilir. Üst ve alt parçalar gelir, birbirine kilitlenir, logo tamamlanır.
 3. **Vizörden geçiş:** Kamera logodaki bir kare boşluğa dalar. Boşluğun içinde showreel döngüsü oynar (WebGL video doku). İçeri girince HTML video tam ekran olur. "Sesli izle" butonu tam showreel oynatıcısını açar.
-4. **Kurgu masası (Yaptığımız işler):** Ekran montaj programına döner. Üstte büyük önizleme monitörü, altta timeline: `V1 Reklam`, `V2 Drone`, `V3 Sosyal Medya`, `V4 Web`. Scroll ile oynatma kafası (playhead) sağa akar. Kafa hangi klipteyse monitörde o işin önizlemesi oynar, yanında müşteri, yıl, iş türü yazar. Klibe tıklayınca `/isler/[slug]` açılır. Filtre kurgu dilindedir: bir track'i "solo" yapınca sadece o kategori kalır.
+4. **Kurgu masası (Yaptığımız işler):** Ekran montaj programına döner. Üstte büyük önizleme monitörü, altta timeline: `V1 Reklam`, `V2 Drone`, `V3 Sosyal Medya`, `V4 Web`. Scroll ile oynatma kafası (playhead) sağa akar. Kafa hangi klipteyse monitörde o işin önizlemesi oynar, yanında müşteri, yıl, iş türü yazar. Klibe tıklayınca `/isler/[slug]` açılır. Filtre kurgu dilindedir: bir track'i "solo" yapınca sadece o kategori kalır. Web işlerinin önizlemesi sitenin ekran kaydıdır (video gibi davranır).
 5. **Hizmetler:** Üç kanal: **Video Prodüksiyon**, **Sosyal Medya & Meta**, **Web Sitesi**. Her biri kurgu programındaki "bin" klasörü gibi açılır, içinde alt hizmetler görünür.
    - Video Prodüksiyon: reklam filmi, kurumsal tanıtım, drone / FPV çekim, kurgu ve post prodüksiyon.
    - Sosyal Medya & Meta: içerik üretimi (Reels / kısa video), hesap yönetimi, Meta (Facebook / Instagram) reklam yönetimi.
@@ -218,6 +218,8 @@ Penta arşivi repoya girmez. Gerekirse kısa bir `docs/references/penta.md` notu
 | F8 | Hostinger'a yayın, domain bağlama | Antigravity Flash + Hostinger skill'leri | Site domain'de, SSL açık, form canlıda çalışır |
 
 F4, F2/F3 ile paralel kendi branch'inde yürür.
+
+Her faz için ayrı uygulama planı yazılır (`docs/superpowers/plans/`). Bir sonraki fazın planı, önceki faz bitince yazılır.
 
 ### 8.3 Model kuralları
 
